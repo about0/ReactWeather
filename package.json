@@ -3,19 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "express": "^4.14.0",
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.8.5"
   },
   "proxy": "http://localhost:3000",
   "dependencies": {
     "axios": "^0.15.3",
+    "babel-cli": "^6.18.0",
+    "babel-preset-node6": "^11.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node src/server.js",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
