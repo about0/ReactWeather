@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import {Route, Router, IndexRoute, hashHistory} from 'react-router';
-import logo from './logo.svg';
+import logo from './assets/react-logo.svg';
 import './App.css';
 import Main from './components/Main';
 import Weather from './components/Weather';
 import About from './components/About';
 import Examples from './components/Examples'
+
+
 
 class App extends Component {
     render() {

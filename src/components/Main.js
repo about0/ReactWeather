@@ -1,24 +1,16 @@
 import React from 'react';
-import Navigation from './Nav';
+import NavigationComponent from './Nav';
 
 const Main = (props) => {
     return(
         <div>
-            <Navigation />
-            {props.children}
+            <NavigationComponent />
+            <div className="row">
+                <div className="column medium-6 large-4 small-centered">
+                    {props.children}
+                </div>
+            </div>
         </div>
     )
 };
 export default Main;
-
-// export default class Main extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <Navigation />
-//                 {this.props.children}
-//
-//             </div>
-//         );
-//     }
-// }

@@ -3,26 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "css-loader": "^0.26.1",
     "express": "^4.14.0",
+    "foundation-sites": "^6.3.0",
     "gh-pages": "^0.12.0",
-    "react-scripts": "0.8.5"
+    "jquery": "^3.1.1",
+    "react-scripts": "0.8.5",
+    "react-tap-event-plugin": "^2.0.1",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.1"
   },
   "proxy": "http://localhost:3000",
   "dependencies": {
     "axios": "^0.15.3",
     "babel-cli": "^6.18.0",
     "babel-preset-node6": "^11.0.0",
+    "bootstrap": "^3.3.7",
+    "install": "^0.8.4",
+    "material-ui": "^0.16.6",
+    "npm": "^4.1.1",
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-css-themr": "^1.7.1",
     "react-dom": "^15.4.2",
-    "react-router": "^3.0.0"
+    "react-foundation": "^0.7.0",
+    "react-router": "^3.0.0",
+    "react-toolbox": "^1.3.4"
   },
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   }
 }

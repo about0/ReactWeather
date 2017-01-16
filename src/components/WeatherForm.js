@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-toolbox/lib/button';
 
 export default class WeatherForm extends React.Component {
     onFormSubmit(e) {
@@ -17,7 +18,7 @@ export default class WeatherForm extends React.Component {
             <form onSubmit={ e => this.onFormSubmit(e) }>
                 <input type="text" ref="location"/>
                 <br/>
-                <button>Get Weather</button>
+                <button className="hollow button expanded">Get Weather</button>
             </form>
         )
     }
